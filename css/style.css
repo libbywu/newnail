@@ -175,7 +175,7 @@ nav ul li ul li a {
   width: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .nav-mobile {
     display: block;
   }
@@ -371,6 +371,12 @@ nav ul li ul li a {
 }
 
 @media (max-width: 768px) {
+  h1 , h2{
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
   .wrap {
     background-image: url(../img/photo-nailoil.jpg);
     background-position: right top;

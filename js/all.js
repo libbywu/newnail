@@ -52,6 +52,9 @@ $(document).ready(function () {
             }
         });
 
+
+
+        
         // progress bar
         var skillTop = $('#skills').position().top;
         // console.log('skillTop', skillTop);

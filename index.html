@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/all.js"></script>
 
 </head>
 
@@ -209,36 +207,8 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function(){
-            
-            $('.scrollTop').click(function (e) {
-                e.preventDefault();
-                var target = $(this).attr('href');
-                var targetPos = $(target).offset().top;
-                $('html, body').animate({ scrollTop: targetPos }, 1000);
-            });
-
-            $(window).scroll(function () {
-                var scrollPos = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                console.log(scrollPos, windowHeight);
-
-                $('.scrollTop').each(function () {
-                    var target = $(this).attr('href');
-                    var targetPos = $(target).offset().top;
-                    var targetHeight = $(target).outerHeight();
-                    if (targetPos -1 <= scrollPos && (targetPos + targetHeight) > scrollPos) {
-                        //console.log(target);
-                        $('.scrollTop').removeClass('active')
-                        $(this).addClass('active');
-                    } else {
-                        $(this).removeClass('active')
-                    }
-                });
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/all.js"></script>
 
 </body>
 
